@@ -1,0 +1,18 @@
+/*
+.module.css 확장자로 파일 저장하면 CSS Module 적용됨. 
+자동으로 컴포넌트 스타일 클래스 이름을 고유한 값으로 만들어줌. 클래스명 중복 걱정 없이 막 써라.
+*/
+
+.wrapper {
+    background: black;
+    padding: 1rem;
+    color:white;
+    font-size: 2rem;
+}
+
+/* :global 은 전역적으로 사용되는 경우 추가해줌 */
+
+:global .something {
+    font-weight: 800;
+    color: aqua;
+}
